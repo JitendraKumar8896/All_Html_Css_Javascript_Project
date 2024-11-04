@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left, .right {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.left {
+    flex: 1 1 40%;
+    margin-right: 20px;
+
+}
+
+.right {
+    flex: 1 1 40%;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-para{
+    border-bottom: 1px solid grey;
+    font-size: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.add-item {
+    background-color: #28a745; /* Green for Add */
+}
+
+.remove-item {
+    background-color: #dc3545; /* Red for Remove */
+}
+
+
+.add-item, .remove-item {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-item {
+    background-color: #dc3545;
+}
+
+.cart {
+    margin-bottom: 20px;
+}
+
+.add-para{
+    color: blue;
+    font-size: 12px;
+    border-top: 1px solid grey;
+    padding-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+.total-para{
+    border-top: 1px solid grey;
+    padding-top: 10px;
+}
+h3{
+    border-bottom: 1px solid grey;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}

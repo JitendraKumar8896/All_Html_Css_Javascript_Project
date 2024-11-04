@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+    <div class="checkout-container">
+        <div class="contact-payment">
+            <div class="contact-details">
+                <h2>Contact Details</h2>
+                <label for="email">Email ID</label>
+                <input type="email" id="email" placeholder="John Doe">
+            </div>
+            <div class="payment-section">
+                <h2>Payment</h2>
+                <div class="payment-methods">
+                    <button class="method active">Card</button>
+                    <button class="method">Crypto</button>
+                    <button class="method">Bank</button>
+                </div>
+                <div class="card-details">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" placeholder="John Doe">
+                    <div class="expiry-cvc">
+                        <div>
+                            <label for="expiry">Expiry</label>
+                            <input type="text" id="expiry" placeholder="MM/YY">
+                        </div>
+                        <div>
+                            <label for="cvc">CVC</label>
+                            <input type="text" id="cvc" placeholder="***">
+                        </div>
+                    </div>
+                    <label for="country">Country</label>
+                    <select id="country">
+                        <option value="India">India</option>
+                    </select>
+                    <label for="zip">ZIP</label>
+                    <input type="text" id="zip" placeholder="XXXXX">
+                </div>
+            </div>
+        </div>
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <label for="coupon-code">Enter Coupon Code</label>
+            <div class="coupon-code">
+                <input type="text" id="coupon-code" placeholder="COUPON CODE">
+                <button class="apply-coupon">Apply Coupon</button>
+            </div>
+            <div class="summary-details">
+                <div class="summary-item">
+                    <span>Sub Total</span>
+
+                    <span>₹4,700</span>
+                </div>
+                <div class="summary-item">
+                    <span>Taxes (if applicable)</span>
+                    <span>₹199</span>
+                </div>
+                <div class="summary-item">
+                    <span>Discount</span>
+                    <span>₹0</span>
+                </div>
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span>₹4,999</span>
+                </div>
+                <button class="pay-now">Pay Now ₹4,999</button>
+                <div class="secure-icons">
+                    <img src="images/secure.png" alt="Secure" id="secure">
+                    <img src="images/razorpay.png" alt="Razorpay">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

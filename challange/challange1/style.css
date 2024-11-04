@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F68153;
+}
+
+.clip-square {
+            width: 500px;
+            height: 500px;
+            background-color: #fff;
+            /* Creating a square using clip-path */
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+        }
+
+
+
+.hero-image img {
+    width: 270px;
+    height: 270px;
+}
+
+.btn-glass-mask{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+.btn-glass-mask:hover {
+    background-color: #0056b3;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar-logo, .nav-links li, .username {
+    font-size: 16px;
+    color: #fff;
+}
+
+.username {
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    color: #fff;
+}
+
+.hero-text p {
+    font-size: 15px;
+    color: #fff;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Tablet Navbar */
+    .navbar-logo, .nav-links li, .username {
+        font-size: 14px; /* Reduce text size for tablet */
+    }
+
+    /* Tablet Hero Section */
+    .hero-text h1 {
+        font-size: 28px; /* Reduce heading size */
+    }
+
+    .hero-text p {
+        font-size: 16px; /* Reduce paragraph text size */
+    }
+
+    .hero-image img {
+        width: 300px; /* Reduce image size */
+    }
+}
+
+@media (max-width: 576px) {
+    /* Mobile Navbar */
+    .nav-links {
+        display: none; /* Hide links on mobile */
+    }
+
+    .navbar {
+        justify-content: space-between; /* Align logo and username */
+    }
+
+    /* Mobile Hero Section */
+    .hero-section {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center;
+    }
+
+    .hero-text {
+        text-align: center;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .hero-image img {
+        width: 200px; /* Reduce image size */
+    }
+
+    .hero-text h1 {
+        font-size: 24px; /* Further reduce text size */
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shopping cart</title>
+	<link rel="stylesheet" type="text/css" href="css/cart.css">
+</head>
+<body>
+      <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Thala <span class="sp1">7.</span></h1>
+            </div>
+
+            <!-- Hamburger Menu Checkbox -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+            <!-- Navbar Menu -->
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">About</a></li>
+                    <li><a href="cart.html">Brands</a></li>
+                    <li><a href="checkout.html">More</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="icons">
+                <input type="text" placeholder="Search">
+                <img src="images/order.png" alt="Cart">
+                <img src="images/profile.png" alt="Profile">
+            </div>
+        </div>
+    </header>
+
+     <div class="container">
+        <!-- Left Container: Shopping Cart -->
+        <div class="left-container">
+            <h2>Shopping Cart</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Product 1</td>
+                        <td>- 2 +</td>
+                        <td>Rs. 499.00</td>
+                        <td><button class="remove-btn">X</button></td>
+                    </tr>
+                    <tr>
+                        <td>Product 2</td>
+                        <td>- 1 +</td>
+                        <td>Rs. 499.00</td>
+                        <td><button class="remove-btn">X</button></td>
+                    </tr>
+                    <tr>
+                        <td>Product 3</td>
+                        <td>- 3 +</td>
+                        <td>Rs. 499.00</td>
+                        <td><button class="remove-btn">X</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="checkout.html" class="continue-shopping">< Continue Shopping</a>
+        </div>
+
+        <!-- Right Container: Payment Summary -->
+        <div class="right-container">
+            <div class="summary-card">
+                <h3>Apply Coupon</h3>
+                <input type="text" placeholder="Enter Coupon Code">
+                <button class="apply-btn">Apply Coupon</button>
+                <div class="summary-details">
+                    <p>Sub Total: <span>Rs. 5994.00</span></p>
+                    <p>Taxes: <span>Rs. 200.50</span></p>
+                    <p>Discount: <span>Rs.104.50</span></p>
+                    <p>Total: <span>Rs. 6094.00</span></p>
+                </div>
+                <button class="pay-now-btn">Pay Now</button>
+                <div class="payment-icons">
+                    <img src="https://www.razorpay.com/assets/razorpay-glyph.svg" alt="Razorpay Icon">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+    border-bottom: 2px solid green;
+}
+
+.username {
+    font-size: 14px;
+    border: 1px solid grey;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: lightcyan;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px;
+    background-color: #f0f8ff;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.hero-content h1 span {
+    color: #007bff;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.hero-content button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    
+    cursor: pointer;
+}
+button{
+    border-radius: 10px;
+    border: 2px solid grey;
+}
+
+.hero-content button:hover {
+    background-color: #0056b3;
+}
+
+.hero-image img {
+    max-width: 200%;
+    height: auto;
+}
+@media (max-width: 768px) {
+    .hero-image img {
+        max-width: 100%; /* Make the image take full width on small screens */
+        height: auto;
+    }
+}
+/* Achievements Section: Horizontal layout for larger screens */
+.achievements-section {
+    background-color: #007bff;
+    padding: 50px;
+    color: #fff;
+}
+
+.achievements {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.achievements div {
+    flex: 1;
+    text-align: center;
+}
+
+.achievements div h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.achievements div p {
+    font-size: 18px;
+}
+
+/* Responsive Styles: Stack services vertically for small screens */
+@media (max-width: 768px) {
+    .achievements {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/*Services booking section start css  */
+   
+
+.container {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left, .right {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.left {
+    flex: 1 1 40%;
+    margin-right: 20px;
+
+}
+
+.right {
+    flex: 1 1 40%;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-para{
+    border-bottom: 1px solid grey;
+    font-size: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.add-item {
+    background-color: #28a745; /* Green for Add */
+}
+
+.remove-item {
+    background-color: #dc3545; /* Red for Remove */
+}
+
+
+.add-item, .remove-item {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-item {
+    background-color: #dc3545;
+}
+
+.cart {
+    margin-bottom: 20px;
+}
+
+.add-para{
+    color: blue;
+    font-size: 12px;
+    border-top: 1px solid grey;
+    padding-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+.total-para{
+    border-top: 1px solid grey;
+    padding-top: 10px;
+}
+.card-added{
+    border-bottom: 1px solid grey;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.confirmation{
+    font-size: 12px;
+    padding-top: 5px;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
+
+/* Services booking section end css */
+
+/*Quality section start*/
+
+.section-description {
+    padding: 20px;
+    text-align: center;
+}
+.section-newsletter{
+    padding: 20px;
+    text-align: center;  
+    background-color: blue;
+
+}
+.subscribe{
+    margin-bottom: 20px;
+    color: white;
+}
+#quality-description .quality {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.image-all{
+    width: 70px;
+    height: 70px;
+}
+p{
+    font-size: 14px;
+}
+.quality-item {
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+#newsletter form{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+/*.form-news{
+  display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}  
+*/
+
+#newsletter input, #newsletter button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.sub{
+    background-color: white;
+    color: blue;
+    font-weight: bold;
+    width: 200px;
+    height: 40px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .quality-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #newsletter form {
+        flex-direction: column;
+    }
+}
+
+/*footer start*/
+
+
+footer {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.footer-section h2, 
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-section p, 
+.footer-section ul {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #666;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+}
+/*footer section end*/
+

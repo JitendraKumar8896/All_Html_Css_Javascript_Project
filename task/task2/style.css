@@ -1,0 +1,51 @@
+body{
+	padding:10px;
+	background-color: #FF7F50;
+	border: 3px solid black;
+}
+.head{
+	color: blue;
+}
+#bglime{
+	background-color: #72FF72;
+}
+#sp{
+     color: red;
+}
+p{
+	color: white;
+}
+#para{
+	color: green;
+	font-size: 13px;
+}
+#span{
+	font-size: 20px;
+	color: black;
+}
+.a{
+	color: black;
+	font-weight: bold;
+}
+#mafia{
+	color: blue;
+	background-color: yellow;
+}
+#google{
+	color: black;
+	background-color: blue;
+}
+ul{
+	color: white;
+}
+
+ol{
+	color: black;
+}
+
+span{
+	color: blue;
+}
+#id{
+	color: red;
+}

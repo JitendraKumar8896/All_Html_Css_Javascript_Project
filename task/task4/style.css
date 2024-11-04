@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    width: 100%;
+    background-color: white;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+header .logo {
+    float: left;
+    padding-left: 50px;
+    font-size: 24px;
+}
+
+header nav {
+    display: inline-block;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+header .username {
+    float: right;
+    text-align: center;
+    padding-right: 50px;
+    background-color: #e6f2ff;
+    padding: 1px 10px 10px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+  
+    margin: 0px 10px 0px 20px;
+}
+
+.hero {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero .text,
+.hero .image {
+    width: 50%;
+    float: left;
+    padding: 50px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-20%); /* Vertically center both text and image */
+}
+
+.hero .text {
+    text-align: left;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.hero h1 .highlight {
+    color: #007bff;
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #777;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.hero .image {
+    text-align: right;
+}
+
+.hero .image img {
+    width: 90%; /* Adjust this to make the image bigger */
+    max-width: 600px; 
+}
+@media screen and (max-width: 768px) {
+    header .logo, header .username {
+        float: none;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .hero .text, .hero .image {
+        width: 100%;
+        float: none;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero .image img {
+        width: 100%;
+    }
+}

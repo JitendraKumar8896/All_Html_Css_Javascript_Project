@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links li {
+    font-size: 18px;
+}
+
+.username {
+    background-color: #e9f4ff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Mobile Menu (Hidden by default) */
+.mobile-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.mobile-menu ul li {
+    margin: 20px 0;
+}
+
+/* Hamburger Icon (Hidden by default on larger screens) */
+.hamburger-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #007bff;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    
+    
+}
+.cta-button:hover{
+    transform: scale(1.1) rotate(-5deg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.hero-image img {
+    width: 400px;
+    height: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Hide the desktop menu links and show the hamburger icon */
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block; /* Show the hamburger menu in mobile view */
+    }
+
+    /* When the hamburger button is focused, show the mobile menu */
+    .hamburger-menu:focus + .mobile-menu {
+        display: block;
+    }
+
+    /* Responsive Hero Section */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        width: 300px;
+    }
+}

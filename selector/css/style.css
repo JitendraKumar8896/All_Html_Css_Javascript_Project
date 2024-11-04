@@ -1,0 +1,63 @@
+.center {
+    text-align: center;
+    color: purple;
+    font-size: 45px;
+
+  }
+ h1{
+    text-align: center;
+    color: purple;
+    background-color: grey;
+    font-size: 40px;
+ }
+ h2{
+    color: blue;
+ }
+
+/*
+ *{
+    border: 1px solid red;
+ }  */
+
+body{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: papayawhip;
+    color: rgb(0, 0, 0 );
+
+
+
+}
+main{
+    font-family: monospace;
+}
+
+
+button, input, textarea,select{
+  font: inherit;  
+}
+
+p{
+    color: purple;
+}
+
+.grey{
+    color: grey;
+}
+.highlight{
+    text-transform: uppercase;
+    background-color: gold;
+}
+
+#second{
+    font-style: italic;
+
+}
+
+
+
+
+
+
+

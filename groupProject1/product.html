@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Product Page</title>
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Thala <span class="sp1">7.</span></h1>
+            </div>
+
+            <!-- Hamburger Menu Checkbox -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+            <!-- Navbar Menu -->
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">About</a></li>
+                    <li><a href="cart.html">Brands</a></li>
+                    <li><a href="checkout.html">More</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="icons">
+                <input type="text" placeholder="Search">
+                <img src="images/order.png" alt="Cart">
+                <img src="images/profile.png" alt="Profile">
+            </div>
+        </div>
+    </header>
+    <div class="product-container">
+        <!-- Left Side: Main Product Image -->
+        <div class="product-image">
+            <img src="images/shoe4.jpg" alt="Main Shoe Image" />
+        </div>
+
+        <!-- Right Side: Product Info, Price, Quantity, and Add to Cart -->
+        <div class="product-details">
+            <h1 class="product-name">Seven By M.S. Dhoni Women's Hogun Multi-Color Running Shoes</h1>
+            <p class="product-description">
+                For exceptional fit, feel and smooth transitions get going with these dual mindsole technology shoes.
+                These stylish running shoes offer great comfort and support for all your sports activities. Available in multiple sizes.
+            </p>
+            <p class="product-price">Rs.1334</p>
+            <p class="product-sale">On Sale: 20% Off!</p>
+            
+            <div class="quantity-section">
+                <label for="quantity">Quantity: </label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+            </div>
+            
+            <a href="cart.html"><button class="add-to-cart">Add to Cart</button></a>
+        </div>
+    </div>
+
+    <!-- Bottom Gallery Section -->
+    <div class="image-gallery">
+        <img src="images/shoe1.jpg" alt="Shoe Image 1">
+        <img src="images/shoe2.jpg" alt="Shoe Image 2">
+        <img src="images/shoe3.png" alt="Shoe Image 3">
+        <img src="images/shoe4.jpg" alt="Shoe Image 4">
+    </div>
+</body>
+</html>

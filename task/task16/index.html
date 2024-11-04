@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Records</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .search-box {
+            margin-bottom: 20px;
+        }
+        .student-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .student-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            width: 250px;
+        }
+        .student-card h3 {
+            margin: 0 0 10px;
+        }
+        .student-card p {
+            margin: 5px 0;
+        }
+        .seach-button{
+            border-radius: 25%;
+            color: white;
+            background-color: blue;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Student Records</h1>
+
+    <!-- Search Box -->
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search student by name...">
+        <button class="seach-button" id="search">Search</button>
+    </div>
+
+    <!-- Student Cards Container -->
+    <div id="studentContainer" class="student-container">
+        <!-- Cards will be dynamically injected here -->
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Booking Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+    <nav class="navbar">
+        <div class="logo">Logo</div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+        <!-- Centered Navigation Links -->
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Username and Logout on Right Side -->
+        <div class="nav-right">
+            <span class="username">Username</span>
+            <button class="logout-btn">Logout</button>
+        </div>
+    </nav>
+</header>
+
+
+    <main>
+        <div class="container">
+            <!-- Left Section - Cart -->
+            <div class="left-section">
+                <h3>Added Items</h3>
+                <table id="cart-items">
+                    <tr class="empty-cart">
+                        <td colspan="3">No Items Added</td>
+                    </tr>
+                </table>
+                <p>Total Amount: ₹<span id="total-price">0</span></p>
+
+                <div class="booking-form">
+                    <h3>Book Now</h3>
+                    <form id="booking-form">
+                        <input type="text" id="full-name" placeholder="Full Name" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <input type="tel" id="phone" placeholder="Phone Number" required>
+                        <button type="submit"class="book-btn" >Book Now</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Right Section - Browse Services -->
+            <div class="right-section">
+                <h3>Browse Our Services</h3>
+                <p>Click on the add to cart button to add the services to your cart or press skip</p>
+
+                <div class="service-item">
+                    <img src="img.jfif" alt="Service Image" id="service-image">
+                    <h4 id="service-name">Dry Cleaning</h4>
+                    <p id="service-price">₹200.00</p>
+                    <button class="skip-btn" onclick="skipService()">Skip Item</button>
+                    <button class="add-btn" data-price="200" onclick="addItem()">Add Item</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

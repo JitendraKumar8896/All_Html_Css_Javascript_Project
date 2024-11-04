@@ -1,0 +1,292 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+   
+
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    position: sticky; /* Make the navbar sticky */
+    top: 0; /* Stick it to the top */
+    z-index: 1000; /* Ensure it stays above other elements */
+    width: 100%;
+
+}
+
+.logo h1 {
+    color: #f67f00;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navbar */
+nav ul {
+    display: flex;
+    list-style: none;
+    transition: all 0.3s ease;
+}
+.sp1{
+    color: blue;
+}
+.sp2{
+    color: #f67f00;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f67f00;
+}
+
+/* Icons Section */
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons input {
+    padding: 5px 10px;
+    margin-right: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.icons img {
+    width: 24px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/* Hamburger Menu (Checkbox Hack) */
+#menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+/*    background: url('background.jpg') no-repeat center center/cover;   */
+    align-items: center;
+    padding: 50px 0;
+    height: 75vh;
+   
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 500px;
+}
+
+.hero-text h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    color: #333;
+}
+
+.hero-text button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-text button:hover {
+    background-color: #e56d00;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    width: 500px;
+}
+
+/*.services {
+    background-color: #ff8c00;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.service-box {
+    text-align: center;
+}
+
+.service-box img {
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+.service-box h3 {
+    font-size: 28px;
+    margin-bottom: 0;
+}
+
+.service-box p {
+    font-size: 18px;
+    margin-top: 0;
+}
+*/
+/* Responsive */
+@media (max-width: 768px) {
+    /* Hide Nav Links and Icons by Default */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 20px 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Show Hamburger Menu */
+    .hamburger {
+        display: block;
+    }
+
+    /* Show Navbar when Checkbox is Toggled */
+    #menu-toggle:checked + .hamburger + nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .hero-image img {
+        width: 200px;
+    }
+}
+/* Services Section */
+.services {
+    width: 100%;
+    background-color: #ff8c00;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.service-box {
+    display: flex;
+    margin-left: px;
+    align-items: center;
+    text-align: left;
+   
+    flex-basis: 23%; /* Adjusts width for responsiveness */
+    
+}
+
+.service-box img {
+    width: 70px;
+    margin-right: 20px;
+    color: #fff;
+
+}
+
+.service-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service-content h3 {
+    font-size: 25px;
+    
+    margin-right: 10px;
+}
+
+.service-content p {
+    font-size: 14px;
+    margin-top: 0;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        flex-basis: 100%; /* Full width on small screens */
+        justify-content: center;
+    }
+
+    .service-box img {
+        margin-right: 10px;
+        width: 30px;
+    }
+
+    .service-content h3 {
+        font-size: 24px;
+    }
+
+    .service-content p {
+        font-size: 16px;
+    }
+}

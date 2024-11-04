@@ -1,0 +1,37 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Border Bottom</title>
+    <style>
+        .hover-border {
+            position: relative;
+            display: inline-block;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .hover-border::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: green;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+
+        .hover-border:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="hover-border">Hover over me</a>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewport Image and Button</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            width: 50vw; /* 50% of viewport width */
+        }
+
+        .container img {
+            width: 100%; /* Scale image to fit the container */
+            height: auto;
+            display: block; /* Ensure image behaves like a block-level element */
+            margin: 0; /* Remove margin */
+            padding: 0; /* Remove padding */
+        }
+
+        .container button {
+            width: 100%;
+            padding: 2vh 0; /* Vertical padding: 2vh */
+            background: linear-gradient(to right, orange, green);
+            border: none;
+            color: white;
+            font-size: 2vw; /* Button font size based on viewport width */
+            cursor: pointer;
+            margin: 0;
+            display: block; /* Ensure button is block-level element */
+            line-height: 1; /* No extra line spacing */
+        }
+
+        .container button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="image.jpg" alt="Mountain Lake">
+        <button>Click Me</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h2>Our Services</h2>
+            <p class="service-para">Click on the Add To Cart Button To Add The Services To Your Cart</p>
+            <div class="service-item">
+                <span>Dry Cleaning - ₹200.00</span>
+                <button class="action-btn" data-service="Dry Cleaning" data-price="200" onclick="toggleItem(this)">Add Item</button>
+            </div>
+            <div class="service-item">
+                <span>Wash & Fold - ₹100.00</span>
+                <button class="action-btn" data-service="Wash & Fold" data-price="100" onclick="toggleItem(this)">Add Item</button>
+            </div>
+            <div class="service-item">
+                <span>Ironing - ₹30.00</span>
+                <button class="action-btn" data-service="Ironing" data-price="30" onclick="toggleItem(this)">Add Item</button>
+            </div>
+            <div class="service-item">
+                <span>Stain Removal - ₹500.00</span>
+                <button class="action-btn" data-service="Stain Removal" data-price="500" onclick="toggleItem(this)">Add Item</button>
+            </div>
+            <div class="service-item">
+                <span>Leather & Suede Cleaning - ₹999.00</span>
+                <button class="action-btn" data-service="Leather & Suede Cleaning" data-price="999" onclick="toggleItem(this)">Add Item</button>
+            </div>
+            <div class="service-item">
+                <span>Wedding Dress Cleaning - ₹2800.00</span>
+                <button class="action-btn" data-service="Wedding Dress Cleaning" data-price="2800" onclick="toggleItem(this)">Add Item</button>
+            </div>
+            <p class="add-para">Add the items to the cart and book now!</p>
+        </div>
+        <div class="right">
+            <div class="cart">
+                <h3>Added Items</h3>
+                <ul id="cart-items">
+                    <!-- Cart items will be dynamically added here -->
+                </ul>
+                <p class="total-para">Total Amount: ₹<span id="total-amount">0</span></p>
+            </div>
+            <div class="book-now">
+                <h2>Book Now</h2>
+                <form id="booking-form">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                    <label for="email">Email ID:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <button type="submit">Book Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

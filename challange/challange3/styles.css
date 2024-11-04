@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e5ec;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {  
+  background-color: #fff;
+  width: 400px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  gap: 20px;
+}
+
+.neumorphism-box {
+  width: 100px;
+  height: 100px;
+  background: #e0e5ec;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 20px #a3b1c6, -10px -10px 20px #ffffff;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.neumorphism-box i {
+  font-size: 40px;
+  color: #6c7a89;
+}
+
+.neumorphism-box:active {
+  box-shadow: inset 10px 10px 20px #a3b1c6, inset -10px -10px 20px #ffffff;
+}
+
+.outward {
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px #a3b1c6;
+  border-radius: 50px;
+}
+
+.outward:active {
+  box-shadow: -5px -5px 10px #ffffff, 5px 5px 10px #a3b1c6;
+}

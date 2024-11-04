@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: white;
+    color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Flexbox for navigation bar */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+}
+
+.navbar ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Style for username and logout button */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logout-btn {
+    background-color: red;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.username {
+    color: white;
+    background-color: green;
+    padding: 5px 10px;
+    border-radius: 5px;
+   
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links-container {
+        display: none;
+    }
+
+    .nav-links-container.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-right {
+        display: none; /* Hide the right side (username and logout) in small screens */
+    }
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.left-section, .right-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: left;
+}
+
+.booking-form input, .booking-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+}
+.book-btn{
+    background-color: blue;
+    color: white;
+}
+
+.service-item img {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+.right-section .skip-btn, .add-btn {
+    padding: 10px;
+    border: none;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.skip-btn {
+    background-color: red;
+    color: white;
+}
+
+.add-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+    }
+}
